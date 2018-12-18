@@ -8,40 +8,58 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Esercitazione MODIS</title>
 </head>
+
 <body>
     <div class="container">
         <div class="jumbotron">
             <h1>Primo Client Modis</h1>
         </div>
-        <table class="table table-striped table-responsive table-hover">
+        <table id="studentTable" class="table table-striped table-responsive table-hover">
             <tr>
-                <th>Nome</th>
-                <th>Cognome</th>
-                <th>Indirizzo</th>
                 <th>Id</th>
+                <th>Nome</th>
+                <th>Corsi Seguiti</th>
             </tr>
-            <tr>
-                <td>Mario</td>
-                <td>Rossi</td>
-                <td>via mellusso n°23</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Pippo</td>
-                <td>Noleggio</td>
-                <td>via annuziata c.da sorba</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Agostino</td>
-                <td>Caruso</td>
-                <td>via p.le</td>
-                <td>3</td>
-            </tr>
+
         </table>
+
+        <form id="studentPost" class="form-horizontal">
+            <div class="form-group">
+                <label for="nome" class="col-lg-2 control-label">Nome</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="nome" name="nome" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cognome" class="col-lg-2 control-label">Cognome</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="cognome" name="cognome" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="indirizzo" class="col-lg-2 control-label">Indirizzo</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="indirizzo" name="indirizzo" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <input type="submit" class="btn btn-primary" value="Insert"/>
+                </div>
+            </div>
+
+
+
     </div>
+    </form>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
